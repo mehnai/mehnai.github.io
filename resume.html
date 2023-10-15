@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resume</title>
+    <meta charset=" UTF-8">
+ </head>
+
+ <style>
+    @font-face {
+        font-family: n82;
+        src: url(BACKTO1982.TTF);
+    }
+    @font-face {
+        font-family: dotty;
+        src: url(dotty.ttf);
+    }
+    @font-face {
+        font-family: kamikaze3D;
+        src: url(Kamikaze3DGradient.ttf);
+    }
+    @font-face {
+        font-family: forward ;
+        src: url(FFFFORWA.TTF);
+    }
+    @font-face {
+        font-family: kamikaze;
+        src: url(Kamikaze.ttf);
+    }
+    @font-face{
+        font-family:zonky;
+        src:url("SoundDistortion-6YzED.otf")
+    }
+    body{
+        background-image: url(bunnyboy.png);
+        background-repeat: repeat;
+    }
+    .button {
+        border: none;
+        color: transparent;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+     }
+     .button1{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 50px;
+        top: 200px;
+        background-image: url(CLICKHERE.gif);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+     }
+     .button2{
+        width:200px;
+        height: 200px;
+        position: absolute;
+        left:400px;
+        top: 420px;
+        background-image: url(suitcase.gif);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+    }
+    .button3{
+        width:200px;
+        height: 200px;
+        position: absolute;
+        left: 675px;
+        top: 400px;
+        background-image: url(resume.gif);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+    }
+    .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    /* The actual popup (appears on top) */
+    .popup .popuptext {
+        visibility: hidden;
+        width: 160px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -80px;
+    }
+
+    /* Popup arrow */
+    .popup .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+    /* Toggle this class when clicking on the popup container (hide and show the popup) */
+    .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s
+    }
+
+    /* Add animation (fade in the popup) */
+    @-webkit-keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+    } 
+</style>
+
+<body>
+    <audio autoplay>
+        <source src="soobway.mp3" type="audio/mpeg">
+    </audio>
+    <h1 style="font-family: n82; color: rgb(126, 87, 255); font-size: 72pt; text-align: center;">RESUME PAGE</h1>
+
+    <input type="button" value="sound" onclick="playMusic()" class = "button button1" />
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2 style="font-family: forward; color:rgb(255, 0, 242); font-size: 36pt; text-align: center ;">Design Choice Credit: Nicole Klatt</h2>
+</body>
+<script>
+    function playMusic(){
+        var music = new Audio('soobway.mp3');
+        music.play();
+  }
+</script>
